@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\bin\Debug\CSharpReflectionTest.exe
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\bin\Debug\CSharpReflectionTest.pdb
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\obj\Debug\CSharpReflectionTest.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\obj\Debug\CSharpReflectionTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\obj\Debug\CSharpReflectionTest.exe
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\obj\Debug\CSharpReflectionTest.pdb
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\bin\Debug\DB.Interface.dll
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\bin\Debug\DB.MySqlServer.dll
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\bin\Debug\DB.Interface.pdb
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\bin\Debug\DB.MySqlServer.pdb
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\obj\Debug\CSharpReflectionTest.csproj.CopyComplete
+C:\Users\Administrator\Desktop\CSharpReflectionTest\CSharpReflectionTest\bin\Debug\CSharpReflectionTest.exe.config

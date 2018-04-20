@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\CSharpReflectionTest\DB.Interface\bin\Debug\DB.Interface.dll
+C:\Users\Administrator\Desktop\CSharpReflectionTest\DB.Interface\bin\Debug\DB.Interface.pdb
+C:\Users\Administrator\Desktop\CSharpReflectionTest\DB.Interface\obj\Debug\DB.Interface.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\CSharpReflectionTest\DB.Interface\obj\Debug\DB.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\CSharpReflectionTest\DB.Interface\obj\Debug\DB.Interface.dll
+C:\Users\Administrator\Desktop\CSharpReflectionTest\DB.Interface\obj\Debug\DB.Interface.pdb
