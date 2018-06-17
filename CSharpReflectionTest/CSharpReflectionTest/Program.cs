@@ -40,10 +40,10 @@ namespace CSharpReflectionTest
                 {
                     Console.WriteLine("*****************Refection_Function********************");
                     Assembly assembly = Assembly.Load("DB.MySqlServer");//从当前路径下加载，不带dll后缀
-                    Assembly assembly2 = Assembly.LoadFile(
-                        @"C:\Users\Administrator\Desktop\CSharpReflectionTest\" +
-                        @"DB.MySqlServer\bin\Debug\DB.MySqlServer.dll");    //从指定文件路径加载dll文件
-                    Assembly assembly3 = Assembly.LoadFrom("DB.MySqlServer.dll");//从当前路径下加载带dll后缀
+                    //Assembly assembly2 = Assembly.LoadFile(
+                    //    @"C:\Users\Administrator\Desktop\CSharpReflectionTest\" +
+                    //    @"DB.MySqlServer\bin\Debug\DB.MySqlServer.dll");    //从指定文件路径加载dll文件
+                    //Assembly assembly3 = Assembly.LoadFrom("DB.MySqlServer.dll");//从当前路径下加载带dll后缀
 
 
                     /****************************查看反射信息********************************/
@@ -218,7 +218,7 @@ namespace CSharpReflectionTest
                         switch (item.Name)
                         {
                             case "iTestValue":
-                                item.SetValue(oModel,333);
+                                item.SetValue(oModel, 333);
                                 break;
                             case "sTestValue":
                                 item.SetValue(oModel, "2333");
@@ -236,7 +236,7 @@ namespace CSharpReflectionTest
                         switch (item.Name)
                         {
                             case "ID":
-                                item.SetValue(oModel,2231,null);
+                                item.SetValue(oModel, 2231, null);
                                 break;
                             case "Name":
                                 item.SetValue(oModel, "胡志乾", null);
@@ -259,9 +259,9 @@ namespace CSharpReflectionTest
                     }
 
                 }
-               
 
-                #endregion  
+
+                #endregion
 
             }
             catch (Exception ex)
