@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\CSharpBitConvertTest\CSharpBitConvertTest\bin\Debug\CSharpBitConvertTest.exe
+C:\Users\Administrator\Desktop\CSharpBitConvertTest\CSharpBitConvertTest\bin\Debug\CSharpBitConvertTest.pdb
+C:\Users\Administrator\Desktop\CSharpBitConvertTest\CSharpBitConvertTest\obj\Debug\CSharpBitConvertTest.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\CSharpBitConvertTest\CSharpBitConvertTest\obj\Debug\CSharpBitConvertTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\CSharpBitConvertTest\CSharpBitConvertTest\obj\Debug\CSharpBitConvertTest.exe
+C:\Users\Administrator\Desktop\CSharpBitConvertTest\CSharpBitConvertTest\obj\Debug\CSharpBitConvertTest.pdb
