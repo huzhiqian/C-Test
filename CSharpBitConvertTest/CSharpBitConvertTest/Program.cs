@@ -24,7 +24,10 @@ namespace CSharpBitConvertTest
                 string dstr = BitConverter.ToString(cDoubleByte,0, cDoubleByte.Length);
                 Console.WriteLine($"浮点_字符数据：{dstr}");
 
+                Console.WriteLine("***************还原数据*********************");
 
+                Console.WriteLine($"整型还原数据：{BitConverter.ToInt32(convertBytes,0)}");
+                Console.WriteLine($"浮点还原数据：{BitConverter.ToDouble(cDoubleByte,0)}");
             }
             catch (Exception ex)
             {
