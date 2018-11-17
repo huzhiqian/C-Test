@@ -1,0 +1,13 @@
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.csprojAssemblyReference.cache
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.Form1.resources
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.Properties.Resources.resources
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.SerializeObjInfoCtrl.resources
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.csproj.GenerateResource.cache
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.csproj.CoreCompileInputs.cache
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\bin\Release\CustomSerializationTest.exe
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\bin\Release\CustomSerializationTest.pdb
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\bin\Release\halcondotnet.dll
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\bin\Release\halcondotnet.xml
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.csproj.CopyComplete
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.exe
+C:\Users\hzq\Desktop\CustomSerializationTest\CustomSerializationTest\obj\Release\CustomSerializationTest.pdb
