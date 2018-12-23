@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\bin\Debug\SerializeTest2.exe.config
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\bin\Debug\SerializeTest2.exe
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\bin\Debug\SerializeTest2.pdb
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.Form1.resources
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.Properties.Resources.resources
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.exe
+C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.pdb

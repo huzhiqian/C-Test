@@ -95,6 +95,7 @@ namespace CustomSerializationTest
             info.AddValue("CreateTime", CreateTime,typeof(string));
             info.AddValue("SerializeType", SerializeType,typeof(SerializeTypeEnum));
             info.AddValue("MyValue", MyValue,typeof(HTuple));
+            MessageBox.Show("执行序列化完成！");
            
         }
 
