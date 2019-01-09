@@ -14,18 +14,20 @@ namespace SerializeTest2
         private int ivalue = 1;
         private double dvalue = 1.0;
         private string svalue = "123";
+        private string name="Test1";
 
-        public InnerObject()
+        public InnerObject(string _name)
         {
-         
+            name = _name;
         }
 
         public InnerObject(SerializationInfo info, StreamingContext context)
         {
-            MessageBox.Show($"{DateTime.Now.ToString("HH:mm:ss.fff")}:Inner 序列化开始");
+            MessageBox.Show($"{DateTime.Now.ToString("HH:mm:ss.fff")}:Inner_{name} 序列化开始");
             ivalue = info.GetInt32("ivalue");
             dvalue = info.GetDouble("dvalue");
             svalue = info.GetString("svalue");
+            name = info.GetString("name");
 
         }
 
@@ -71,6 +73,7 @@ namespace SerializeTest2
             info.AddValue("ivalue",ivalue);
             info.AddValue("dvalue",dvalue);
             info.AddValue("svalue",svalue);
+            info.AddValue("name", name);
         }
     }
 }

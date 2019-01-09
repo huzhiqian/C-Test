@@ -8,3 +8,12 @@ C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\Serialize
 C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.exe
 C:\Users\Administrator\Desktop\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.pdb
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\bin\Debug\SerializeTest2.exe.config
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\bin\Debug\SerializeTest2.exe
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\bin\Debug\SerializeTest2.pdb
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.Form1.resources
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.Properties.Resources.resources
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.csproj.GenerateResource.cache
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.csproj.CoreCompileInputs.cache
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.exe
+I:\C#练习程序\序列化\SerializeTest2\SerializeTest2\obj\Debug\SerializeTest2.pdb
