@@ -10,6 +10,8 @@
 
 `4:2019-2-21 添加反射获取和修改类中的属性测试Demo。位置：%ROOT%\C#练习程序\RefectionGetPropertiesTest`  
 
-`5:2019-3-28 添加环形队列测试Demo。位置：%ROOT%\C#练习程序\环形队列`
+`5:2019-3-28 添加环形队列测试Demo。位置：%ROOT%\C#练习程序\环形队列`  
+  
+`6:2019-4-30 添加TreeView控件测试代码，为后面讲XML文件转换成TreeView形式做准备。位置：%ROOT%\C#练习程序\TreeViewTest`  
 
 
