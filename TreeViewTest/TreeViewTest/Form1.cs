@@ -73,5 +73,10 @@ namespace TreeViewTest
             if (treeView1.SelectedNode == null) return;
             tbx_SelectNodeName.Text = treeView1.SelectedNode.Text;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            treeView1.Nodes.Clear();
+        }
     }
 }

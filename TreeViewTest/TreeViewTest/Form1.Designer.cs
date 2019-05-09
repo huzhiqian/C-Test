@@ -31,15 +31,16 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.btn_AddChildNode = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbx_RootValue = new System.Windows.Forms.TextBox();
-            this.btn_Create = new System.Windows.Forms.Button();
             this.tbx_ChildNodeValue = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_Create = new System.Windows.Forms.Button();
+            this.tbx_RootValue = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_DeleteNode = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tbx_SelectNodeName = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -74,44 +75,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "添加节点";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btn_Create);
-            this.groupBox2.Controls.Add(this.tbx_RootValue);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(405, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(360, 135);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "创建根节点";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Value:";
-            // 
-            // tbx_RootValue
-            // 
-            this.tbx_RootValue.Location = new System.Drawing.Point(84, 31);
-            this.tbx_RootValue.Name = "tbx_RootValue";
-            this.tbx_RootValue.Size = new System.Drawing.Size(216, 25);
-            this.tbx_RootValue.TabIndex = 1;
-            // 
-            // btn_Create
-            // 
-            this.btn_Create.Location = new System.Drawing.Point(221, 76);
-            this.btn_Create.Name = "btn_Create";
-            this.btn_Create.Size = new System.Drawing.Size(130, 53);
-            this.btn_Create.TabIndex = 2;
-            this.btn_Create.Text = "Create";
-            this.btn_Create.UseVisualStyleBackColor = true;
-            this.btn_Create.Click += new System.EventHandler(this.btn_Create_Click);
-            // 
             // tbx_ChildNodeValue
             // 
             this.tbx_ChildNodeValue.Location = new System.Drawing.Point(84, 35);
@@ -127,6 +90,44 @@
             this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Value:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btn_Create);
+            this.groupBox2.Controls.Add(this.tbx_RootValue);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(405, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(360, 135);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "创建根节点";
+            // 
+            // btn_Create
+            // 
+            this.btn_Create.Location = new System.Drawing.Point(221, 76);
+            this.btn_Create.Name = "btn_Create";
+            this.btn_Create.Size = new System.Drawing.Size(130, 53);
+            this.btn_Create.TabIndex = 2;
+            this.btn_Create.Text = "Create";
+            this.btn_Create.UseVisualStyleBackColor = true;
+            this.btn_Create.Click += new System.EventHandler(this.btn_Create_Click);
+            // 
+            // tbx_RootValue
+            // 
+            this.tbx_RootValue.Location = new System.Drawing.Point(84, 31);
+            this.tbx_RootValue.Name = "tbx_RootValue";
+            this.tbx_RootValue.Size = new System.Drawing.Size(216, 25);
+            this.tbx_RootValue.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Value:";
             // 
             // btn_DeleteNode
             // 
@@ -156,11 +157,22 @@
             this.tbx_SelectNodeName.Size = new System.Drawing.Size(230, 25);
             this.tbx_SelectNodeName.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(459, 404);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(260, 59);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "ClearAllNodes";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(768, 640);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tbx_SelectNodeName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_DeleteNode);
@@ -193,6 +205,7 @@
         private System.Windows.Forms.Button btn_DeleteNode;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbx_SelectNodeName;
+        private System.Windows.Forms.Button button1;
     }
 }
 

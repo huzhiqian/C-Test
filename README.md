@@ -14,4 +14,6 @@
   
 `6:2019-4-30 添加TreeView控件测试代码，为后面讲XML文件转换成TreeView形式做准备。位置：%ROOT%\C#练习程序\TreeViewTest`  
 
+`7:2019-5-9 添加XML文件操作测试类。 位置：%Root%\C#练习程序\XML\XMLFileOperatorTest`
+
 
