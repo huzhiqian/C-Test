@@ -9,10 +9,10 @@ C:\Users\Administrator\Desktop\XMLFileOperatorTest\XMLFileOperatorTest\obj\Relea
 C:\Users\Administrator\Desktop\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.csprojAssemblyReference.cache
 G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\bin\Release\XMLFileOperatorTest.exe
 G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\bin\Release\XMLFileOperatorTest.pdb
-G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.csprojAssemblyReference.cache
 G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.Form1.resources
 G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.Properties.Resources.resources
 G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.csproj.GenerateResource.cache
 G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.csproj.CoreCompileInputs.cache
 G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.exe
 G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.pdb
+G:\C#练习程序\XML\XMLFileOperatorTest\XMLFileOperatorTest\obj\Release\XMLFileOperatorTest.csprojAssemblyReference.cache

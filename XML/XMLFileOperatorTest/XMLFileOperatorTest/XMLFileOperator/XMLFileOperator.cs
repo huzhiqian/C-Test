@@ -155,14 +155,15 @@ namespace XMLFileOperatorTest.XMLFileOperator
             if (xmlDocFile == null) return;
             //Clear treeview
             treeView.Nodes.Clear();
+          
             if (rootNode != null)
-                XMLToTreeview(treeView.Nodes, rootNode);
+                XMLToTreeview( treeView.Nodes, rootNode);
         }
         #endregion
 
         #region 私有方法
 
-        private void XMLToTreeview(TreeNodeCollection treeRootNodes, XmlNode xmlRootNode)
+        private void XMLToTreeview( TreeNodeCollection treeRootNodes, XmlNode xmlRootNode)
         {
             TreeNode treeNode = new TreeNode();
             if (xmlRootNode.Attributes != null && xmlRootNode.Attributes.Count > 0)
@@ -172,28 +173,27 @@ namespace XMLFileOperatorTest.XMLFileOperator
                 {
                     sb.Append(" ").Append(item.Name).Append("=").Append(item.Value);
                 }
-                treeNode= treeRootNodes.Add(sb.ToString());
+                treeNode = treeRootNodes.Add(sb.ToString());
 
             }
-            TreeNode childNode=null;
+            else
+            {
+               if(xmlRootNode.NodeType!= XmlNodeType.Text)
+                treeNode = treeRootNodes.Add(xmlRootNode.Name);
+            }
             if (xmlRootNode.Value != null)
             {
-                childNode= treeNode.Nodes.Add(string.Format("Value:{0}", xmlRootNode.Value));
+                treeNode= treeRootNodes.Add(string.Format("Value:{0}", xmlRootNode.Value));
             }
             if (!xmlRootNode.HasChildNodes)
             {
                 return;
             }
-            else
-            {
-            }
+
             System.Xml.XmlNodeList xmlNodeList = xmlRootNode.ChildNodes;
             foreach (System.Xml.XmlNode xmlnode in xmlNodeList)
             {
-                if(childNode!=null)
-                    XMLToTreeview(childNode.Nodes, xmlnode);
-                else
-                    XMLToTreeview(treeNode.Nodes, xmlnode);
+                    XMLToTreeview( treeNode.Nodes, xmlnode);
             }
         }
 
