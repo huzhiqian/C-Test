@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\SimpleMEFDemo\SimpleMEFDemo\bin\Debug\SimpleMEFDemo.exe
+C:\Users\Administrator\Desktop\SimpleMEFDemo\SimpleMEFDemo\bin\Debug\SimpleMEFDemo.pdb
+C:\Users\Administrator\Desktop\SimpleMEFDemo\SimpleMEFDemo\obj\Debug\SimpleMEFDemo.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\SimpleMEFDemo\SimpleMEFDemo\obj\Debug\SimpleMEFDemo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\SimpleMEFDemo\SimpleMEFDemo\obj\Debug\SimpleMEFDemo.exe
+C:\Users\Administrator\Desktop\SimpleMEFDemo\SimpleMEFDemo\obj\Debug\SimpleMEFDemo.pdb
