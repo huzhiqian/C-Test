@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace XMLFileOperatorTest
 {
@@ -23,7 +24,10 @@ namespace XMLFileOperatorTest
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
+            dataGridView1.Columns.Add("Attribute", "Attribute");
+            dataGridView1.Columns.Add("Value", "Value");
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -85,11 +89,11 @@ namespace XMLFileOperatorTest
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //List<System.Xml.XmlNode> nodeList = new List<System.Xml.XmlNode>();
-            if (xmlOperator.XMLDocFile == null) return;
-            //MessageBox.Show($"根节点名称：{xmlOperator.XMLDocFile.DocumentElement.Name}");
-            GetAllChildNode(xmlOperator.XMLDocFile.DocumentElement, 0);
-            
+            ////List<System.Xml.XmlNode> nodeList = new List<System.Xml.XmlNode>();
+            //if (xmlOperator.XMLDocFile == null) return;
+            ////MessageBox.Show($"根节点名称：{xmlOperator.XMLDocFile.DocumentElement.Name}");
+            //GetAllChildNode(xmlOperator.XMLDocFile.DocumentElement, 0);
+            xmlOperator.ConvertXMLToListBox(listBox_NodeList);
         }
 
 
@@ -143,5 +147,66 @@ namespace XMLFileOperatorTest
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_XMLNodePath.Text)) return;
+            string nodePath = tbx_XMLNodePath.Text;
+            XmlNode node = xmlOperator.GetXMLSingleNode(nodePath);
+            ParseNodeData(node);
+        }
+
+        private void ParseNodeData(XmlNode node)
+        {
+            lst_Attribute.Items.Clear();
+            lst_Attribute.Items.Add(string.Format("Attribute Count:{0}", node.Attributes.Count));
+            if (node.Attributes.Count > 0)
+            {
+                for (int i = 0; i < node.Attributes.Count; i++)
+                {
+                    lst_Attribute.Items.Add(string.Format("Attribute{0}Value:{1}",i+1,node.Attributes[i].Value));
+                }
+            }
+
+            if (string.IsNullOrEmpty(node.InnerText))
+            {
+                tbx_innerText.Text = "NULL";
+            }
+            else
+            {
+                tbx_innerText.Text = node.InnerText;
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_parentNodePath.Text) ||
+                string.IsNullOrEmpty(tbx_NodexName.Text)) return;
+            XmlElement element = CreateNode();
+            xmlOperator.AddSingleNode(element, tbx_parentNodePath.Text);
+        }
+
+        private XmlElement CreateNode()
+        {
+            XmlElement element = xmlOperator.XMLDocFile.CreateElement(tbx_NodexName.Text) ;
+            if (dataGridView1.Rows.Count != 0)
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count-1; i++)
+                {
+                    element.SetAttribute(dataGridView1.Rows[i].Cells[0].Value.ToString(),
+                        dataGridView1.Rows[i].Cells[1].Value.ToString());
+                }
+            }
+            element.InnerText = tbx_SetNodeInnerText.Text;
+
+            return element;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow gridviewrow = new DataGridViewRow();
+            gridviewrow.CreateCells(dataGridView1);
+
+            dataGridView1.Rows.Add(gridviewrow);
+        }
     }
 }
