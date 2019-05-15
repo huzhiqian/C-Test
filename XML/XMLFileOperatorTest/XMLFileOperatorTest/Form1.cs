@@ -149,14 +149,22 @@ namespace XMLFileOperatorTest
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbx_XMLNodePath.Text)) return;
-            string nodePath = tbx_XMLNodePath.Text;
-            XmlNode node = xmlOperator.GetXMLSingleNode(nodePath);
-            ParseNodeData(node);
+            try
+            {
+                if (string.IsNullOrEmpty(tbx_XMLNodePath.Text)) return;
+                string nodePath = tbx_XMLNodePath.Text;
+                XmlNode node = xmlOperator.GetXMLSingleNode(nodePath);
+                ParseNodeData(node);
+            }
+            catch (Exception )
+            {
+            }
+
         }
 
         private void ParseNodeData(XmlNode node)
         {
+            if (node == null) return;
             lst_Attribute.Items.Clear();
             lst_Attribute.Items.Add(string.Format("Attribute Count:{0}", node.Attributes.Count));
             if (node.Attributes.Count > 0)

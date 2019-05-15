@@ -35,9 +35,10 @@ namespace SimpleMEFDemo
             // 2:DirectoryCatalog 在指定的目录发现部件。
             // 3:DeploymentCatalog 在指定的XAP文件中发现部件（用于silverlight）
             //
-            var catalog = new AssemblyCatalog(Assembly.GetExecutingAssembly());
-            CompositionContainer container = new CompositionContainer(catalog);
-            container.ComposeParts(this);
+            var catalog = new AssemblyCatalog(Assembly.GetExecutingAssembly()); //创建目录
+            CompositionContainer container = new CompositionContainer(catalog); //创建容器
+            container.ComposeParts(this);         //组建
+
         }
     }
 }
