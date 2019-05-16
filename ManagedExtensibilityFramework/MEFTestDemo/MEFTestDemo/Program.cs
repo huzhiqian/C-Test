@@ -17,6 +17,11 @@ namespace MEFTestDemo
             {
                 mObj.WriteLog("Test");
             }
+
+            foreach (var item in testObj.pluginList)
+            {
+                (item.Value as ILogger).WriteLog("write Info");
+            }
             Console.ReadLine();
         }
     }
