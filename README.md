@@ -16,7 +16,10 @@
 
 `7:2019-5-9 添加XML文件操作测试类。 位置：%Root%\C#练习程序\XML\XMLFileOperatorTest`
 
-`8:2019-5-10 添加MEF(托管可扩展框架)测试程序。位置：%Root%\C#练习程序\ManagedExtensibilityFramework`  
+`8:2019-5-10 添加MEF(托管可扩展框架)测试程序。位置：%Root%\C#练习程序\ManagedExtensibilityFramework\简单MEF测试`   
+
+`9:2019-5-16 添加MEF测试Demo,主要测试在类中动态加载DLL文件，详见ManagedExtensibilityFramework文件夹中的ReadMe文件。 位置：%Root%\C#练习程序\ManagedExtensibilityFramework\MEFTestDemo`  
+
 
 
 
