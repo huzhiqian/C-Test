@@ -18,7 +18,10 @@
 
 `8:2019-5-10 添加MEF(托管可扩展框架)测试程序。位置：%Root%\C#练习程序\ManagedExtensibilityFramework\简单MEF测试`   
 
-`9:2019-5-16 添加MEF测试Demo,主要测试在类中动态加载DLL文件，详见ManagedExtensibilityFramework文件夹中的ReadMe文件。 位置：%Root%\C#练习程序\ManagedExtensibilityFramework\MEFTestDemo`  
+`9:2019-5-16 添加MEF测试Demo,主要测试在类中动态加载DLL文件，详见ManagedExtensibilityFramework文件夹中的ReadMe文件。 位置：%Root%\C#练习程序\ManagedExtensibilityFramework\MEFTestDemo`    
+
+`10:2019-6-21 添加Log4Net测试程序，开始测试并学习Log4Net日志系统怎么用，并将在以后的C#程序中注入Log4Net日志系统。位置：%Root%\C#练习程序\Log4Net测试程序`   
+
 
 
 
