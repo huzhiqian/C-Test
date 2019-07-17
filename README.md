@@ -20,7 +20,9 @@
 
 `9:2019-5-16 添加MEF测试Demo,主要测试在类中动态加载DLL文件，详见ManagedExtensibilityFramework文件夹中的ReadMe文件。 位置：%Root%\C#练习程序\ManagedExtensibilityFramework\MEFTestDemo`    
 
-`10:2019-6-21 添加Log4Net测试程序，开始测试并学习Log4Net日志系统怎么用，并将在以后的C#程序中注入Log4Net日志系统。位置：%Root%\C#练习程序\Log4Net测试程序`   
+`10:2019-6-21 添加Log4Net测试程序，开始测试并学习Log4Net日志系统怎么用，并将在以后的C#程序中注入Log4Net日志系统。位置：%Root%\C#练习程序\Log4Net测试程序`  
+
+`11:2019-7-3 添加AppConfig测试程序，深入研究App.Config文件的特性，为以后程序的可配置做准备。在以前的项目中app.config文件中只能用appSettings和ConectionSettings两个节，我们想在app.config中赋予更多的自定义节，使app.config文件更加灵活。目前只知道ConfigurationSection可以实现自定义的节，具体怎么实现接下将具体测试。位置：%Root%\C#练习程序\AppConfig测试程序` 
 
 
 
