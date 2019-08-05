@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\XMLHelperTest\XMLHelperTest\bin\Debug\XMLHelperTest.exe
+C:\Users\Administrator\Desktop\XMLHelperTest\XMLHelperTest\bin\Debug\XMLHelperTest.pdb
+C:\Users\Administrator\Desktop\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.exe
+C:\Users\Administrator\Desktop\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.pdb
