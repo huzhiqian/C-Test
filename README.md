@@ -28,6 +28,7 @@
 
 `13: 2019-9-8 添加排序测试，在list中的对象可以直接调用sort方法排序，位置：%Root%\行列排序测试\ConsoleApp1`
 
+`14:2019-9-29 添加重绘Button控件的测试，将button绘制成圆形。位置：%Root%\RoundButtonTestProj`
 
 
 

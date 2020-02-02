@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\bin\Debug\RoundButtonTestProj.exe.config
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\bin\Debug\RoundButtonTestProj.exe
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\bin\Debug\RoundButtonTestProj.pdb
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\obj\Debug\RoundButtonTestProj.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\obj\Debug\RoundButtonTestProj.Properties.Resources.resources
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\obj\Debug\RoundButtonTestProj.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\obj\Debug\RoundButtonTestProj.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\obj\Debug\RoundButtonTestProj.exe
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\obj\Debug\RoundButtonTestProj.pdb
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\bin\Debug\RoundButton.dll
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\bin\Debug\RoundButton.pdb
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\obj\Debug\RoundButtonTestProj.Form1.resources
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButtonTestProj\obj\Debug\RoundButtonTestProj.csproj.CopyComplete

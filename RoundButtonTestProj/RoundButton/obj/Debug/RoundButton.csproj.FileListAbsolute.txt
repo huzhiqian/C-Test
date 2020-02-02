@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButton\bin\Debug\RoundButton.dll
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButton\bin\Debug\RoundButton.pdb
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButton\obj\Debug\RoundButton.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButton\obj\Debug\RoundButton.dll
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButton\obj\Debug\RoundButton.pdb
+C:\Users\Administrator\Desktop\RoundButtonTestProj\RoundButton\obj\Debug\RoundButton.csprojAssemblyReference.cache
