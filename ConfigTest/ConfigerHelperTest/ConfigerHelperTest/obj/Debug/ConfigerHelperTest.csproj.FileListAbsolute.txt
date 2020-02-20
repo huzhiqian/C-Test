@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\bin\Debug\ConfigerHelperTest.exe.config
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\bin\Debug\ConfigerHelperTest.exe
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\bin\Debug\ConfigerHelperTest.pdb
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\bin\Debug\CommonModules.dll
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\bin\Debug\log4net.dll
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\bin\Debug\CommonModules.pdb
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\bin\Debug\log4net.xml
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\obj\Debug\ConfigerHelperTest.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\obj\Debug\ConfigerHelperTest.Form1.resources
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\obj\Debug\ConfigerHelperTest.Properties.Resources.resources
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\obj\Debug\ConfigerHelperTest.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\obj\Debug\ConfigerHelperTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\obj\Debug\ConfigerHelperTest.csproj.CopyComplete
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\obj\Debug\ConfigerHelperTest.exe
+C:\Users\Administrator\Desktop\ConfigerHelperTest\ConfigerHelperTest\obj\Debug\ConfigerHelperTest.pdb

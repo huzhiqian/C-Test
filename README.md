@@ -32,5 +32,7 @@
 
 `15 2020-2-13 添加Labda表达式测试，在看到List.ToDictionary():[  public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector);]突然有点不太理解了，所以重新复习了一下`
 
+`16 2020-2-20 添加ConfigerTest，主要测试ConmmonModules中ConfigerHelper类的功能`
+
 
 
