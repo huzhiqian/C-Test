@@ -34,5 +34,9 @@
 
 `16 2020-2-20 添加ConfigerTest，主要测试ConmmonModules中ConfigerHelper类的功能`
 
+`17 2020-2-25 添加TCPClientTest,主要测试CommonModuls中AsyncTCPClient功能，位置：Root%\TCPClientTest\AsyncTCPClientTest`  
+
+
+
 
 
