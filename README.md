@@ -36,7 +36,9 @@
 
 `17 2020-2-25 添加TCPClientTest,主要测试CommonModuls中AsyncTCPClient功能，位置：Root%\TCPClientTest\AsyncTCPClientTest`  
 
-`18 2020-2-26 添加TCPServerTest，主要测试新的异步服务器（AsyncTCPServer）功能，位置：Root%\TCPServerTest\AsyncTCPServerTest`  
+`18 2020-2-26 添加TCPServerTest，主要测试新的异步服务器（AsyncTCPServer）功能，位置：Root%\TCPServerTest\AsyncTCPServerTest`    
+
+`19 2020-3-1 添加XMLHelperTest，测试CommonModuls中的XMLHelper功能，位置:Root%\XML\XMLHelperTest`
 
 
 
