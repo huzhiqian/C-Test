@@ -40,6 +40,9 @@
 
 `19 2020-3-1 添加XMLHelperTest，测试CommonModuls中的XMLHelper功能，位置:Root%\XML\XMLHelperTest`
 
+`20 2020-3-2 添加PropertyGridTest，PropertyGrid是.net提供的控件，该控件功能是类似于VS窗体项目中控件属性窗口。接下来将测试该控件的使用方法并将其用于所有的功能类中，以便于用户轻松的更改软件属性。`  
+ 
+
 
 
 
