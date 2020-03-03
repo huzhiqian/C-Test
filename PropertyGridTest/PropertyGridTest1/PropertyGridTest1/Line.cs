@@ -28,11 +28,15 @@ using System.IO;
 
 namespace PropertyGridTest1
 {
+
    public  class Line
     {
         private double lineLength = 0;
         private Color lineColor= Color.AntiqueWhite;
         private string name = "Line1";
+
+        private CPoint startPoint = new CPoint();
+        private CPoint endPoint = new CPoint();
         #region 构造函数
 
         public Line()
@@ -56,7 +60,7 @@ namespace PropertyGridTest1
 
 
         [Browsable(true)]
-        [CategoryAttribute("属性"),DescriptionAttribute("线段长度"),ReadOnlyAttribute(false)]
+        [CategoryAttribute("属性"),DescriptionAttribute("线段长度"),ReadOnlyAttribute(true)]
         public double LineLength
         {
             get { return lineLength; }
@@ -68,8 +72,35 @@ namespace PropertyGridTest1
         public Color LineColor
         {
             get { return lineColor; }
-            set { lineColor = value; }
+            set { lineColor = value;
+                Changed?.Invoke();
+            }
         }
+
+        [TypeConverter(typeof(LineConverter))]
+        [Browsable(true)]
+        [CategoryAttribute("位置"), DescriptionAttribute("线段起始点"), ReadOnlyAttribute(false)]
+        public CPoint StartPoint
+        {
+            get { return startPoint; }
+            set {
+                startPoint = value;
+                Changed?.Invoke();
+            }
+        }
+
+        [TypeConverter(typeof(LineConverter))]
+        [Browsable(true)]
+        [CategoryAttribute("位置"), DescriptionAttribute("线段起终点"), ReadOnlyAttribute(false)]
+        public CPoint EndPoint
+        {
+            get { return endPoint; }
+            set { endPoint = value;
+                Changed?.Invoke();
+            }
+        }
+
+
         #endregion
 
         #region 公共方法
@@ -92,7 +123,7 @@ namespace PropertyGridTest1
 
         #region 事件
 
-
+        public event Action Changed;
 
         #endregion
     }
