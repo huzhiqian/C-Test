@@ -32,7 +32,7 @@ namespace PropertyGridTest1
             {
                 pen.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;//实线
                 g.DrawLine(pen, new Point(line.StartPoint.PointX, line.StartPoint.PointY),
-                    new Point(line.EndPoint.PointX,line.EndPoint.PointY));
+              
             }
         }
     }

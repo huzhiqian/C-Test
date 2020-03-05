@@ -5,12 +5,27 @@
 
 1.[2020-3-2 21:53] 添加PropertyGridTest1主要测试PropertyGrid基础功能。
 
+2.[2020-3-4 13:12] 添加PropertyGridTest2主要测试复杂属性（类）中如果有父类，怎样控制父类中的属性显示及修改问题。  
 
+3.[2020-3-5 11:42] 添加PropertyGridTest3主要测试PropertyGrid修改复杂属性使用自定义控件。  
+
+
+##测试结果
+
+【1】PropertyGrid无法显示复杂属性中具体信息，如果需要修改复杂属性需要添加转换器（TypeConverter）;  
+【2】父类中的属性不做任何标记也可以显示在“杂项”中，默认可以被修改，但是复杂依然需要提供相应的转换器，如下图所示
+<center>![avator](image/5.jpg)</center>  
+如上图所示，父类中的所有属性都显示了，而且在没有任何Attribute标记的情况下只要有set访问器就可以被修改，这样带来一个严重的问题，并不是所有情况下都允许用户修改父类中的属性，这时需要考虑如何在子类中控制这些属性的显示。隐藏掉父类中的属性方法如下图所示：
+<center>![avator](image/6.jpg)</center>
+【3】在PropertyGrid中可以使用自定义控件修改复杂属性，需要为复杂控件提供特定的转换器（TypeConverter）的同时，还需要为自定义控件提供特定的UITypeEditor，详见代码。另外，如果需要在PropertyGrid中显示中文属性名的话，可以在属性头上用[DisplayName]标注出来。
+<center>![avator](image/7.jpg)</center>
+<center>![avator](image/8.jpg)</center>
 ##修改记录    
 
 1.[2020-3-3 11:22] 在为对象添加自定义复杂属性时，PropertyGrid无法显示属性内部信息，以及无法修改属性内部数据（如下图所示）。为此要解决这个问题必须添加转换器。  
+
 <center>![avator](image/1.jpg)</center>   
-```C#
+```
 public class LineConverter:TypeConverter
     {
 
@@ -122,7 +137,7 @@ public class LineConverter:TypeConverter
 
 转换后便可以在PropertyGrid中修改复杂属性值了
 <center>![avator](image/4.jpg)</center>  
-  -----
+-----
 ##学习
 ###<center><font face="宋体" size=6 color=blue>一、转换器</font></center>
 

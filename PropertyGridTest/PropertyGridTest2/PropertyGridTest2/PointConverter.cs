@@ -12,29 +12,33 @@ using System.Reflection;
 
 
 //**********************************************
-//文件名：LineConverter
-//命名空间：PropertyGridTest1
+//文件名：PointConverter
+//命名空间：PropertyGridTest2
 //CLR版本：4.0.30319.42000
 //内容：
 //功能：
 //文件关系：
 //作者：胡志乾
 //小组：
-//生成日期：2020/3/3 16:41:13
+//生成日期：2020/3/4 14:30:10
 //版本号：V1.0.0.0
 //修改日志：
 //版权说明：
 //联系电话：18352567214
 //**********************************************
 
-namespace PropertyGridTest1
+namespace PropertyGridTest2
 {
     //转换器类
-   public class LineConverter:TypeConverter
+   public class PointConverter:TypeConverter
     {
 
         #region 构造函数
 
+        public PointConverter()
+        {
+
+        }
 
         #endregion
 
@@ -47,6 +51,7 @@ namespace PropertyGridTest1
 
         #region 公共方法
 
+
         /// <summary>
         /// 判断可以从哪些类型转换而来
         /// </summary>
@@ -57,7 +62,7 @@ namespace PropertyGridTest1
         {
             if (sourceType == typeof(string))
             {
-                return true;    
+                return true;
             }
             return base.CanConvertFrom(context, sourceType);
         }
@@ -86,22 +91,22 @@ namespace PropertyGridTest1
         /// <param name="value"></param>
         /// <param name="destinationType"></param>
         /// <returns></returns>
-        public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value ,Type destinationType)
+        public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
         {
             if (destinationType == typeof(string) && value != null)
             {
                 CPoint point = value as CPoint;
-                string str = string.Format($"{point.PointX},{point.PointY}");
+                string str = string.Format($"{point.X},{point.Y}");
                 return str;
             }
 
-            if (destinationType == typeof(InstanceDescriptor) && value!=null)
+            if (destinationType == typeof(InstanceDescriptor) && value != null)
             {
-                ConstructorInfo constructorInfo = typeof(CPoint).GetConstructor(new Type[] { typeof(int),typeof(int) });
+                ConstructorInfo constructorInfo = typeof(CPoint).GetConstructor(new Type[] { typeof(int), typeof(int) });
                 CPoint point = value as CPoint;
-                return new InstanceDescriptor(constructorInfo,new object[] { point.PointX,point.PointY});
+                return new InstanceDescriptor(constructorInfo, new object[] { point.X, point.Y });
             }
-            return base.ConvertTo(context, culture, value, destinationType);    
+            return base.ConvertTo(context, culture, value, destinationType);
         }
 
 
@@ -118,8 +123,8 @@ namespace PropertyGridTest1
 
                 int X = 0;
                 int Y = 0;
-       
-                bool result = int.TryParse(p[0],out X);
+
+                bool result = int.TryParse(p[0], out X);
                 if (!result)
                     throw new NotSupportedException("输入参数出错");
                 //
@@ -127,7 +132,7 @@ namespace PropertyGridTest1
                 if (!result)
                     throw new NotSupportedException("输入参数出错");
 
-                CPoint point = new CPoint(X,Y);
+                CPoint point = new CPoint(X, Y);
 
 
                 return point;
@@ -136,13 +141,6 @@ namespace PropertyGridTest1
             return base.ConvertFrom(context, culture, value);
         }
 
-        /// <summary>
-        /// 根据返回值确定是否支持下拉框的形式
-        /// </summary>
-        /// true: 下来框的形式  
-        /// false: 普通文本编辑的形式  
-        /// <param name="context"></param>
-        /// <returns></returns>
         public override bool GetPropertiesSupported(ITypeDescriptorContext context)
         {
             return true;
@@ -153,6 +151,7 @@ namespace PropertyGridTest1
             return TypeDescriptor.GetProperties(value, attributes);
             //return base.GetProperties(context, value, attributes);
         }
+
         #endregion
 
         #region 私有方法
