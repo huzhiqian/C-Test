@@ -42,7 +42,7 @@
 
 `20 2020-3-2 添加PropertyGridTest，PropertyGrid是.net提供的控件，该控件功能是类似于VS窗体项目中控件属性窗口。接下来将测试该控件的使用方法并将其用于所有的功能类中，以便于用户轻松的更改软件属性。`  
  
-
+`21 2020-4-1 添加EventInfo类测试，该类是System.Reflection中的一个成员类，在编写反射Cognex源码时发现该类可以获取对象中的所有事件以及使用其内部方法AddEventHandler方法动态绑定事件，所以测试一下其具体有哪些功能。位置：Root%\EventInfo测试`
 
 
 
