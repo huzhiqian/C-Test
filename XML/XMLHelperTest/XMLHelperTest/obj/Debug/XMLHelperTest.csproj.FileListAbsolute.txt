@@ -18,3 +18,17 @@ I:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\log4net.dll
 I:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\CommonModules.pdb
 I:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\log4net.xml
 I:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.csproj.CopyComplete
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\XMLHelperTest.exe.config
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\XMLHelperTest.exe
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\XMLHelperTest.pdb
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\CommonModules.dll
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\log4net.dll
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\CommonModules.pdb
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\bin\Debug\log4net.xml
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.csprojAssemblyReference.cache
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.Form1.resources
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.csproj.GenerateResource.cache
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.csproj.CoreCompileInputs.cache
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.csproj.CopyComplete
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.exe
+J:\C#练习程序\XML\XMLHelperTest\XMLHelperTest\obj\Debug\XMLHelperTest.pdb

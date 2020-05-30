@@ -18,7 +18,7 @@ namespace XMLHelperTest
         public Form1()
         {
             InitializeComponent();
-            xmlHelper = new CommonModules.XML.XmlHelper("Device.xml");
+            xmlHelper = new CommonModules.XML.XmlHelper("Axis2.cfg");
         }
 
         private void Form1_Load(object sender, EventArgs e)

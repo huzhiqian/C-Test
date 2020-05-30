@@ -44,6 +44,8 @@
  
 `21 2020-4-1 添加EventInfo类测试，该类是System.Reflection中的一个成员类，在编写反射Cognex源码时发现该类可以获取对象中的所有事件以及使用其内部方法AddEventHandler方法动态绑定事件，所以测试一下其具体有哪些功能。位置：Root%\EventInfo测试`
 
+`22 2020-5-30 添加无边框界面测试代码，项目上有一个需求需要弹出一个框并且在没有操作之前必须要显示在最前端，但是.net中的MessageBox没法ShowDialog，只能自己写一个，网上查了一下大神的代码，用Form做了一个无边框的Form和无边框的MessageBox.位置：Root%\无边框界面测试\NoneBorderWndTest`
+
 
 
 
