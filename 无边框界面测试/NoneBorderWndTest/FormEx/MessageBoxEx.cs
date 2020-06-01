@@ -107,12 +107,12 @@ namespace FormEx
         //            else if (vPoint.Y >= ClientSize.Height - 5)
         //                m.Result = (IntPtr)HTBOTTOM;
         //            break;
-        //        //case 0x0201://鼠标左键按下的消息 
-        //        //    m.Msg = 0x00A1;//更改消息为非客户区按下鼠标 
-        //        //    m.LParam = IntPtr.Zero;//默认值 
-        //        //    m.WParam = new IntPtr(2);//鼠标放在标题栏内 
-        //        //    base.WndProc(ref m);
-        //        //    break;
+        //        case 0x0201://鼠标左键按下的消息 
+        //            m.Msg = 0x00A1;//更改消息为非客户区按下鼠标 
+        //            m.LParam = IntPtr.Zero;//默认值 
+        //            m.WParam = new IntPtr(2);//鼠标放在标题栏内 
+        //            base.WndProc(ref m);
+        //            break;
         //        default:
         //            base.WndProc(ref m);
         //            break;

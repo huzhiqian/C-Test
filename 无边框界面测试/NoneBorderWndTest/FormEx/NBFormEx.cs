@@ -272,20 +272,20 @@ namespace FormEx
 
         private void titleBar_MouseDown(object sender, MouseEventArgs e)
         {
-            //mPoint = new Point(e.X, e.Y);
+            mPoint = new Point(e.X, e.Y);
 
             //为当前的应用程序释放鼠标捕获
-            ReleaseCapture();
+            //ReleaseCapture();
             //发送消息﹐让系統误以为在标题栏上按下鼠标
-            SendMessage((int)this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
+            //SendMessage((int)this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
         }
 
         private void titleBar_MouseMove(object sender, MouseEventArgs e)
         {
-            //if (e.Button == MouseButtons.Left)
-            //{
-            //    this.Location = new Point(this.Location.X + e.X - mPoint.X, this.Location.Y + e.Y - mPoint.Y);
-            //}
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Location = new Point(this.Location.X + e.X - mPoint.X, this.Location.Y + e.Y - mPoint.Y);
+            }
         }
         #endregion
 
@@ -293,11 +293,24 @@ namespace FormEx
 
 
         private void titleBar_Resize(object sender, EventArgs e)
-        {
-            SetWindowRegion();
+        {         
             this.Invalidate();
         }
 
+        protected override void OnResize(EventArgs e)
+        {        
+            this.Region = null;
+           
+            SetWindowRegion();
+
+             base.OnResize(e);
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {         
+            DrawTitleBar();
+            base.OnPaint(e);
+        }
         /// <summary>
         /// 设置窗体的Region
         /// </summary>
@@ -306,7 +319,16 @@ namespace FormEx
             GraphicsPath FormPath;
             Rectangle rect = new Rectangle(0, 0, this.Width, this.Height);
             FormPath = GetRoundedRectPath(rect, 10);
+          
             this.Region = new Region(FormPath);
+
+        }
+
+        private void DrawTitleBar()
+        {
+            SolidBrush solidBrush = new SolidBrush(titleBarColor);
+            Graphics g = this.CreateGraphics();
+            g.FillRectangle(solidBrush,new Rectangle(0,0,this.Width,35));
 
         }
 
@@ -338,6 +360,11 @@ namespace FormEx
             path.AddArc(arcRect, 90, 90);
             path.CloseFigure();//闭合曲线
             return path;
+        }
+
+        private void titleBar_DoubleClick(object sender, EventArgs e)
+        {
+            MaxNormalSwitch();
         }
     }
 }
