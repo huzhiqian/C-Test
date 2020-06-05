@@ -215,11 +215,24 @@ namespace FormEx
             return messageBoxEx.ShowDialog();
         }
 
+        public static DialogResult ShowDialog(string msg, string title, IWin32Window owner)
+        {
+            MessageBoxEx messageBoxEx = new MessageBoxEx(msg, title);
+            messageBoxEx.StartPosition = FormStartPosition.CenterScreen;
+            return messageBoxEx.ShowDialog(owner);
+        }
+
         public static DialogResult ShowDialog(string msg)
         {
             MessageBoxEx messageBoxEx = new MessageBoxEx(msg);
             messageBoxEx.StartPosition = FormStartPosition.CenterScreen;
             return messageBoxEx.ShowDialog();
+        }
+        public static DialogResult ShowDialog(string msg, IWin32Window owner)
+        {
+            MessageBoxEx messageBoxEx = new MessageBoxEx(msg);
+            messageBoxEx.StartPosition = FormStartPosition.CenterScreen;
+            return messageBoxEx.ShowDialog(owner);
         }
 
         public static void Show(string msg, string title)

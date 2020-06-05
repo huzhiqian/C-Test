@@ -99,9 +99,11 @@
             // 
             // lbl_MessageInfo
             // 
+            this.lbl_MessageInfo.AutoEllipsis = true;
             this.lbl_MessageInfo.AutoSize = true;
             this.lbl_MessageInfo.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbl_MessageInfo.Location = new System.Drawing.Point(74, 79);
+            this.lbl_MessageInfo.Location = new System.Drawing.Point(26, 79);
+            this.lbl_MessageInfo.MaximumSize = new System.Drawing.Size(350, 0);
             this.lbl_MessageInfo.Name = "lbl_MessageInfo";
             this.lbl_MessageInfo.Size = new System.Drawing.Size(56, 16);
             this.lbl_MessageInfo.TabIndex = 3;

@@ -31,7 +31,7 @@ namespace NoneBorderWndTest
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBoxEx.Show("设备故障，请检修","警告");
+            MessageBoxEx.ShowDialog("准备放料时未检测到负压信号，可能是送料过程中物料掉了！准备放料时未检测到负压信号，可能是送料过程中物料掉了！准备放料时未检测到负压信号，可能是送料过程中物料掉了！", "警告");
         }
 
         private void button3_Click(object sender, EventArgs e)
