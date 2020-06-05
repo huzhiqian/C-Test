@@ -46,6 +46,8 @@
 
 `22 2020-5-30 添加无边框界面测试代码，项目上有一个需求需要弹出一个框并且在没有操作之前必须要显示在最前端，但是.net中的MessageBox没法ShowDialog，只能自己写一个，网上查了一下大神的代码，用Form做了一个无边框的Form和无边框的MessageBox.位置：Root%\无边框界面测试\NoneBorderWndTest`
 
+`23 2020-6-5 添加线程同步测试，多个相机在触发后，由于算法不同所有结束时间不一样，但又要将所以后结果拿到后向PLC发送结果，所以必须等待所有线程都完成，该测试就是验证AutoResetEvent同步线程策略，AutoResetEvent的waitOne(2000)方法在2秒内收到Set信号后返回True,2秒内没有收到Set信号返回False,同时会卡住线程。 位置：%Root%\线程同步测试\ThreadSynchronizationTest`
+
 
 
 
