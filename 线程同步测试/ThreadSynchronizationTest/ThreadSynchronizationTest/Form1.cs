@@ -48,7 +48,7 @@ namespace ThreadSynchronizationTest
         private int curSysTick;
         private void btn_TriggerCamera_Click(object sender, EventArgs e)
         {
-            if (CountdownTime > 0) return; 
+         
             //出发相机，倒计时定时器
             CountdownTime = 5000;
             CommonModules.Notifier.NotifyHelper.Notify(CommonModules.Notifier.NotifyLevel.INFO,

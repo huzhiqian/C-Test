@@ -48,6 +48,8 @@
 
 `23 2020-6-5 添加线程同步测试，多个相机在触发后，由于算法不同所有结束时间不一样，但又要将所以后结果拿到后向PLC发送结果，所以必须等待所有线程都完成，该测试就是验证AutoResetEvent同步线程策略，AutoResetEvent的waitOne(2000)方法在2秒内收到Set信号后返回True,2秒内没有收到Set信号返回False,同时会卡住线程。 位置：%Root%\线程同步测试\ThreadSynchronizationTest`
 
+`24 2020-6-12 添加IEnumerable与IEnumerator两个接口测试，主要搞清楚这两个接口是怎么用的，位置：Root%\IEnumerable和IEnumerator测试`
+
 
 
 
