@@ -38,8 +38,9 @@
     <StartupObject>XMLHelperTest.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonModules">
-      <HintPath>..\..\..\..\软件框架及常用模块\CommonModules\CommonModules\bin\Debug\CommonModules.dll</HintPath>
+    <Reference Include="CommonModules, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\软件框架及常用模块\CommonModules\CommonModules\bin\Release\CommonModules.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

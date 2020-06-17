@@ -12,7 +12,7 @@ using System.Collections;
 //命名空间：IEnumerableAndIEnumerator测试
 //CLR版本：4.0.30319.42000
 //内容：
-//功能：
+//功能：迭代器
 //文件关系：
 //作者：胡志乾
 //小组：
@@ -25,15 +25,17 @@ using System.Collections;
 
 namespace IEnumerableAndIEnumerator测试
 {
+    //迭代器类
    public class AlgorithmEnumerator:IEnumerator
     {
         private Algorithm[] algorithms;
-        private int current = 0;
+        private int current = -1;
         #region 构造函数
 
         public AlgorithmEnumerator(Algorithm[] algs)
         {
             this.algorithms = algs;
+            current = -1;//初始化迭代器指向。因为迭代器会先调用MoveNext
         }
 
         public object Current
@@ -53,7 +55,7 @@ namespace IEnumerableAndIEnumerator测试
 
         public void Reset()
         {
-            current = 0; 
+            current = -1; 
         }
 
         #endregion

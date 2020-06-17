@@ -93,5 +93,46 @@ namespace XMLHelperTest
             }
            
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string xPath = tbx_XPath.Text;
+            if (string.IsNullOrEmpty(xPath)) return;
+            try
+            {
+                xmlHelper.DeleteNode(xPath);
+                xmlHelper.Save();
+
+                MessageBox.Show("删除节点成功！");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Axis2.cfg");
+            XmlNode node = doc.SelectSingleNode("/SmartMac/Devices/Device/Signals/Signal[@name='ELP']");
+            if (node != null)
+            {
+                node.ParentNode.RemoveChild(node);
+            }
+            doc.Save("Axis2.cfg");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            XmlElement node = xmlHelper.XMLDoc.CreateElement("Signal");
+            XmlAttribute attribute = xmlHelper.XMLDoc.CreateAttribute("name");
+            attribute.Value = "ELP";
+            node.Attributes.Append(attribute);
+            XmlNode xmlNode = xmlHelper.GetNode("/SmartMac/Devices/Device/Signals");
+            xmlNode.AppendChild(node);
+            xmlHelper.Save();
+        }
     }
 }
