@@ -50,6 +50,8 @@
 
 `24 2020-6-12 添加IEnumerable与IEnumerator两个接口测试，主要搞清楚这两个接口是怎么用的，位置：Root%\IEnumerable和IEnumerator测试`
 
+`25 2020-6-21 添加保存图像测试，新的保存图像的类使用了C++与C#联合的方法，C++写保存图像的核心部分，C#写参数控制部分，新的保存图像的性能比原来高2~4倍，位置：Root%\SaveImageTest`
+
 
 
 
