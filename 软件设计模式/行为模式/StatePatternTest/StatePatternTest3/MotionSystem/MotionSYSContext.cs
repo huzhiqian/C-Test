@@ -8,7 +8,7 @@ using System.Collections;
 
 //**********************************************
 //文件名：MotionSYSContext
-//命名空间：StatePatternTest3.MotionSyatem
+//命名空间：StatePatternTest3.MotionSystem
 //CLR版本：4.0.30319.42000
 //内容：
 //功能：运动控制系统中状态控制环境类
@@ -22,7 +22,7 @@ using System.Collections;
 //联系电话：18352567214
 //**********************************************
 
-namespace StatePatternTest3.MotionSyatem
+namespace StatePatternTest3.MotionSystem
 {
     public class MotionSYSContext
     {
@@ -34,12 +34,13 @@ namespace StatePatternTest3.MotionSyatem
         private ResetMachineState resetState = null;
         private EMGStopState emgStopState = null;
 
-
+        private MotionSysStateManager stateManager = null;
         #region 构造函数
 
-        public MotionSYSContext()
+        public MotionSYSContext(MotionSysStateManager motionSysState)
         {
-            startState = new StartMachineState();
+            stateManager = motionSysState;
+            startState = new StartMachineState(stateManager);
             stopState = new StopMachineState();
             resetState = new ResetMachineState();
             emgStopState = new EMGStopState();
@@ -50,17 +51,14 @@ namespace StatePatternTest3.MotionSyatem
 
         #region 属性
 
-        public MotionStateConstant MotionState
+        /// <summary>
+        /// 获取系统状态管理对象
+        /// </summary>
+        public MotionSysStateManager SysStateManager
         {
-            get { return stateConstant; }
-            internal set {
-                if (value != stateConstant)
-                {
-                    stateConstant = value;
-
-                }
-            }
+            get { return stateManager; }
         }
+
 
         /// <summary>
         /// 获取启动状态对象
@@ -94,12 +92,12 @@ namespace StatePatternTest3.MotionSyatem
         public void SetState(State state)
         {
             if (state.motionState == MotionStateConstant.RUNNING)
-                MotionState = state.motionState;
+                stateManager.MotionState = state.motionState;
             _state = state;
         
         }
 
-        public void DoCommond()
+        public void DoStateCommond()
         {
             if (_state != null)
                 _state.MotionStateHandle(this);

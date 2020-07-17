@@ -8,7 +8,7 @@ using System.Collections;
 
 //**********************************************
 //文件名：State
-//命名空间：StatePatternTest3.MotionSyatem
+//命名空间：StatePatternTest3.MotionSystem
 //CLR版本：4.0.30319.42000
 //内容：
 //功能：
@@ -22,7 +22,7 @@ using System.Collections;
 //联系电话：18352567214
 //**********************************************
 
-namespace StatePatternTest3.MotionSyatem
+namespace StatePatternTest3.MotionSystem
 {
    public abstract  class State
     {

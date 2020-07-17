@@ -7,55 +7,54 @@ using System.Collections;
 
 
 //**********************************************
-//文件名：EMGStopState
-//命名空间：StatePatternTest3.MotionSyatem
+//文件名：Context
+//命名空间：StatePatternTest3.MotionModules.Module1
 //CLR版本：4.0.30319.42000
 //内容：
-//功能：
+//功能：模块一环境类
 //文件关系：
 //作者：胡志乾
 //小组：
-//生成日期：2020/7/9 13:37:20
+//生成日期：2020/7/17 9:47:53
 //版本号：V1.0.0.0
 //修改日志：
 //版权说明：
 //联系电话：18352567214
 //**********************************************
 
-namespace StatePatternTest3.MotionSyatem
+namespace StatePatternTest3.MotionModules.Module1
 {
-   public class EMGStopState:State
+   public class Context
     {
-
+        private State _state = null;
         #region 构造函数
 
-        public EMGStopState()
+        public Context()
         {
-            motionState = MotionStateConstant.EMGSTOP;
+            _state = new IOScanState();
         }
-
-
 
         #endregion
 
 
         #region 属性
 
-
+        internal State SetState {
+            set {
+                _state = value;
+            }
+        }
 
         #endregion
 
         #region 公共方法
 
-        public override void MotionStateHandle(MotionSYSContext context)
+        public void DoStateAction()
         {
-            if (context.MotionState != MotionStateConstant.EMGSTOP)
+            if (_state != null)
             {
-                Console.WriteLine("紧急停止！");
-                EMGStopMachineEvent?.Invoke(true);
-                context.MotionState = MotionStateConstant.EMGSTOP;
+                _state.StateHandle(this);
             }
-          
         }
 
         #endregion
@@ -74,7 +73,7 @@ namespace StatePatternTest3.MotionSyatem
 
         #region 事件
 
-        public event Action<bool> EMGStopMachineEvent;
+
 
         #endregion
     }

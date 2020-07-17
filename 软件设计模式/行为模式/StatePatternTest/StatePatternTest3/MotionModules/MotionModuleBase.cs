@@ -24,14 +24,17 @@ using System.Collections;
 
 namespace StatePatternTest3.MotionModules
 {
-   public class MotionModuleBase
+    public class MotionModuleBase
     {
+        protected MotionSystem.MotionSysStateManager m_StateManager;
 
+        protected bool mStepMode = false;//单步模式
+        protected int stepFlag = 0;
         #region 构造函数
 
-        public MotionModuleBase()
+        public MotionModuleBase(MotionSystem.MotionSysStateManager stateManager)
         {
-
+            m_StateManager = stateManager;
         }
 
         #endregion
@@ -39,20 +42,69 @@ namespace StatePatternTest3.MotionModules
 
         #region 属性
 
-
+        internal int StepFlag
+        {
+            set
+            {
+                if (value != stepFlag)
+                {
+                    stepFlag = value;
+                    StepFlageChange?.BeginInvoke(null, null);
+                }
+            }
+        }
 
         #endregion
 
         #region 公共方法
 
+        public virtual void Run() {
 
+        }
 
         #endregion
 
         #region 私有方法
 
+        protected void DoCommand(Action act)
+        {
+            if (m_StateManager.MotionState == MotionStateConstant.EMGSTOP ||
+                m_StateManager.MotionState == MotionStateConstant.STOP)
+                return;
+            //暂停
+            if (m_StateManager.MotionState == MotionStateConstant.PAUSE)
+            {
+                while (true)
+                {
+                    Thread.Sleep(1);
+                    //在暂停的过程中，如果按下停止或急停直接跳出过程
+                    if (m_StateManager.MotionState == MotionStateConstant.EMGSTOP ||
+                         m_StateManager.MotionState == MotionStateConstant.STOP)
+                        return;
+                    if (m_StateManager.MotionState == MotionStateConstant.RUNNING)
+                        break;
+                }
+            }
+            //单步模式
+            if (mStepMode)
+            {
+                while (stepFlag != 1)//当stepFlag=1时单步等待 
+                {
+                    Thread.Sleep(1);
+                }
+            }
+            act.BeginInvoke(new AsyncCallback(DocommandActionCB), null);
+        }
 
 
+        private void DocommandActionCB(IAsyncResult ar)
+        {
+            if (mStepMode)
+            {
+                if (stepFlag == 0)
+                    stepFlag += 1;
+            }
+        }
         #endregion
 
         #region 委托
@@ -63,7 +115,7 @@ namespace StatePatternTest3.MotionModules
 
         #region 事件
 
-
+        public event Action StepFlageChange;
 
         #endregion
     }

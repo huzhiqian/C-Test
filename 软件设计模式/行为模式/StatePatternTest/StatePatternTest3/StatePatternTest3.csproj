@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommonModules">
+      <HintPath>..\..\..\..\..\软件框架及常用模块\CommonModules\CommonModules\bin\Release\CommonModules.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,15 +53,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MotionModules\Module1\AxisReturnState.cs" />
+    <Compile Include="MotionModules\Module1\CarryProductState.cs" />
+    <Compile Include="MotionModules\Module1\Context.cs" />
+    <Compile Include="MotionModules\Module1\IOScanState.cs" />
+    <Compile Include="MotionModules\Module1\Module1Application.cs" />
+    <Compile Include="MotionModules\Module1\State.cs" />
+    <Compile Include="MotionModules\Module2\Context.cs" />
+    <Compile Include="MotionModules\Module2\ImageProcessState.cs" />
+    <Compile Include="MotionModules\Module2\Module2Application.cs" />
+    <Compile Include="MotionModules\Module2\ScanImageState.cs" />
+    <Compile Include="MotionModules\Module2\State.cs" />
     <Compile Include="MotionModules\MotionModuleBase.cs" />
+    <Compile Include="MotionModules\TempData.cs" />
     <Compile Include="MotionStateConstant.cs" />
-    <Compile Include="MotionSyatem\EMGStopState.cs" />
-    <Compile Include="MotionSyatem\MotionSYSContext.cs" />
-    <Compile Include="MotionSyatem\MotionSystem.cs" />
-    <Compile Include="MotionSyatem\ResetMachineState.cs" />
-    <Compile Include="MotionSyatem\StartMachineState.cs" />
-    <Compile Include="MotionSyatem\State.cs" />
-    <Compile Include="MotionSyatem\StopMachineState.cs" />
+    <Compile Include="MotionSystem\EMGStopState.cs" />
+    <Compile Include="MotionSystem\MotionSYSContext.cs" />
+    <Compile Include="MotionSystem\MotionSysStateManager.cs" />
+    <Compile Include="MotionSystem\MotionSystem.cs" />
+    <Compile Include="MotionSystem\ResetMachineState.cs" />
+    <Compile Include="MotionSystem\StartMachineState.cs" />
+    <Compile Include="MotionSystem\State.cs" />
+    <Compile Include="MotionSystem\StopMachineState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -83,9 +99,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MotionModules\MotionModule1\" />
-    <Folder Include="MotionModules\MotionModule2\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
