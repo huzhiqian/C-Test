@@ -56,6 +56,8 @@
 
 `27 2020-7-17 添加控件数据绑定测试，主要测试Winform控件中的DataBinding属性的用法，DataBinding可以绑定数据库数据也可以绑定实体类中的数据，这里主要测试后者。位置：Root%\控件数据绑定测试`
 
+`28 2020-7-23 添加ListView测试，主要测试ListView能不能作为新的显示日志信息的控件用，测试结果是ListView可以满足新的日志显示控件的需求。位置：Root%\ListViewTest`
+
 
 
 
