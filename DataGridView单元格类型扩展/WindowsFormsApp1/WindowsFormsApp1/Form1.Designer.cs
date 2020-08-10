@@ -37,12 +37,14 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridViewTrackBarCloumn1 = new WindowsFormsApp1.DataGridViewTrackBarCloumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -69,6 +71,7 @@
             // 
             // Column3
             // 
+            this.Column3.DefaultValue = 50;
             this.Column3.HeaderText = "Column3";
             this.Column3.Maximum = 100;
             this.Column3.Minimum = 0;
@@ -114,6 +117,14 @@
             this.textBox1.Size = new System.Drawing.Size(100, 21);
             this.textBox1.TabIndex = 4;
             // 
+            // dataGridViewTrackBarCloumn1
+            // 
+            this.dataGridViewTrackBarCloumn1.DefaultValue = 0;
+            this.dataGridViewTrackBarCloumn1.HeaderText = "Column3";
+            this.dataGridViewTrackBarCloumn1.Maximum = 100;
+            this.dataGridViewTrackBarCloumn1.Minimum = 0;
+            this.dataGridViewTrackBarCloumn1.Name = "dataGridViewTrackBarCloumn1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -139,10 +150,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TextBox textBox1;
+        private DataGridViewTrackBarCloumn dataGridViewTrackBarCloumn1;
         private System.Windows.Forms.DataGridViewImageColumn Column1;
         private System.Windows.Forms.DataGridViewButtonColumn Column2;
         private DataGridViewTrackBarCloumn Column3;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

@@ -120,6 +120,45 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        [
+             Category("Data"),
+              Description("指示单元格的默认值."),
+             RefreshProperties(RefreshProperties.All)
+            ]
+        public int DefaultValue {
+            get {
+                if (this.TrackBarCellTemplate == null) {
+                    throw new InvalidOperationException("操作无法完成，因为此DataGridViewColumn没有CellTemplate。");
+                }
+                return this.TrackBarCellTemplate.DefaultValue;
+            }
+            set {
+                if (this.TrackBarCellTemplate == null)
+                {
+                    throw new InvalidOperationException("操作无法完成，因为此DataGridViewColumn没有CellTemplate。");
+                }
+                this.TrackBarCellTemplate.DefaultValue = value;
+
+                if (this.DataGridView != null)
+                {
+                    DataGridViewRowCollection dataGridViewRows = this.DataGridView.Rows;
+                    int rowCount = dataGridViewRows.Count;
+                    for (int rowIndex = 0; rowIndex < rowCount; rowIndex++)
+                    {
+                        DataGridViewRow dataGridViewRow = dataGridViewRows.SharedRow(rowIndex);
+                        DataGridViewTrackBarCell dataGridViewCell = dataGridViewRow.Cells[this.Index] as DataGridViewTrackBarCell;
+                        if (dataGridViewCell != null)
+                        {
+                            dataGridViewCell.SetDefaultValue(rowIndex, value);
+                        }
+                    }
+                    this.DataGridView.InvalidateColumn(this.Index);
+                }
+            }
+        }
+
+        [Browsable(false)]
         private DataGridViewTrackBarCell TrackBarCellTemplate {
             get { return (DataGridViewTrackBarCell)this.CellTemplate; }
         }

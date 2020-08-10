@@ -17,3 +17,12 @@ C:\Users\Administrator\Desktop\DataGridView单元格类型扩展\WindowsFormsApp
 C:\Users\Administrator\Desktop\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Administrator\Desktop\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+J:\C#练习程序\DataGridView单元格类型扩展\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -48,6 +48,8 @@ namespace WindowsFormsApp1
         internal const int DATAGRIDVIEWTRACKBARCELL_defaultMaximum = 100;
         //默认最小值
         internal const int DATAGRIDVIEWTRACKBARCELL_defaultMinimum = 0;
+        //新行默认值
+        internal const int DATAGRIDVIEWTRACKBARCELL_defaultNewRowValue = 0;
 
         //单元格编辑控件类型
         private static Type defaultEditType = typeof(DataGridViewTrackBarEditingControl);
@@ -64,7 +66,7 @@ namespace WindowsFormsApp1
 
         private int maximumValue;
         private int minimumValue;
-
+        private int defaultValue;
         #region 构造函数
 
         public DataGridViewTrackBarCell()
@@ -82,10 +84,12 @@ namespace WindowsFormsApp1
                 paintingTrackBar = new TrackBar();
                 paintingTrackBar.Maximum = 100;
                 paintingTrackBar.Minimum = 0;
+               // paintingTrackBar.Value = 100;
             }
             //设置默认值
             this.maximumValue = DATAGRIDVIEWTRACKBARCELL_defaultMaximum;
             this.minimumValue = DATAGRIDVIEWTRACKBARCELL_defaultMinimum;
+            this.defaultValue = DATAGRIDVIEWTRACKBARCELL_defaultNewRowValue;
         }
 
         #endregion
@@ -93,7 +97,11 @@ namespace WindowsFormsApp1
 
         #region 属性
 
-        public override object DefaultNewRowValue => 0;
+        public override object DefaultNewRowValue {
+            get {
+                return this.defaultValue;
+            }
+        }
 
         public override Type FormattedValueType => base.FormattedValueType;
 
@@ -144,6 +152,26 @@ namespace WindowsFormsApp1
                     }
                 }
 
+            }
+        }
+
+        /// <summary>
+        /// 获取或设置默认值
+        /// </summary>
+        //[DefaultValue(DATAGRIDVIEWTRACKBARCELL_defaultNewRowValue)]
+        public int DefaultValue {
+            get { return this.defaultValue; }
+            set {
+                if (this.defaultValue != value) {
+                    if (value < this.minimumValue || value > this.maximumValue)
+                    {
+                        throw new ArgumentOutOfRangeException("默认值不能小于最小值以及大于最大值.");
+                    }
+                    else {
+                        SetDefaultValue(this.RowIndex,value);
+                        OnCommonChange();
+                    }
+                }
             }
         }
 
@@ -218,6 +246,7 @@ namespace WindowsFormsApp1
             {
                 dataGridViewTrackBarCell.minimumValue = this.minimumValue;
                 dataGridViewTrackBarCell.maximumValue = this.maximumValue;
+                dataGridViewTrackBarCell.defaultValue = this.defaultValue;
             }
             return dataGridViewTrackBarCell;
         }
@@ -312,7 +341,7 @@ namespace WindowsFormsApp1
             if (!string.IsNullOrEmpty(tempValue as string) && formattedValue != null) {
                 return Convert.ToInt32(tempValue);
             }
-            return 0;
+            return this.defaultValue;
         }
         #endregion
 
@@ -394,7 +423,7 @@ namespace WindowsFormsApp1
             if (!string.IsNullOrEmpty(formattedValue as string) && value != null) {
                 return Convert.ToInt32(formattedValue);
             }
-            return 0;
+            return this.defaultValue;
         }
 
 
@@ -458,6 +487,17 @@ namespace WindowsFormsApp1
                 this.EditTrackBar.Minimum = value;
             }
         }
+
+        /// <summary>
+        /// 设置单元格默认值
+        /// </summary>
+        /// <param name="rowIndex"></param>
+        /// <param name="value"></param>
+        internal void SetDefaultValue(int rowIndex, int value) {
+            this.defaultValue = value;
+            Debug.Assert(this.defaultValue == value);
+        }
+
         /// <summary>
         /// 返回一个被限制在最大值和最小值之间的值
         /// </summary>

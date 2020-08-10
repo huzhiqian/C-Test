@@ -10,8 +10,8 @@ using System.Windows.Forms;
 
 namespace RoundButton
 {
-    
-    [ToolboxItem(true)]
+
+    [ToolboxItemAttribute(true)]
     public partial class RoundButton : Button
     {
 
@@ -147,27 +147,32 @@ namespace RoundButton
 
         protected override void OnPaint(PaintEventArgs pevent)
         {
-            base.OnPaint(pevent);
+            //base.OnPaint(pevent);
             base.OnPaintBackground(pevent);
-
             Graphics g = pevent.Graphics;
+
+
             g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;//抗锯齿
 
             ResizeCtrl();//获取控件区域
-
-            var brush = new LinearGradientBrush(rect, ButtonCenterColorStart, ButtonCenterColorEnd, GradientAngle);
-
-            PaintShape(g, brush, rect);//绘制按钮中心区域
-
-            DrawBorder(g);//绘制边框       
-
-            if (mouseEnter)
+            using (var brush = new LinearGradientBrush(rect, ButtonCenterColorStart, ButtonCenterColorEnd, GradientAngle))
             {
-                DrawHighLight(g);//绘制高亮区域
-                //DrawStateIcon(g);//绘制功能标志
+
+                PaintShape(g, brush, rect);//绘制按钮中心区域
+
+                DrawBorder(g);//绘制边框       
+
+                if (mouseEnter)
+                {
+                    DrawHighLight(g);//绘制高亮区域
+                                     //DrawStateIcon(g);//绘制功能标志
+                }
+                DrawStateIcon(g);//绘制中间区域功能表示
+                DrawText(g);//绘制文字，如果不绘制图标则绘制文字
             }
-            DrawStateIcon(g);//绘制中间区域功能表示
+
+
         }
 
         /// <summary>
@@ -286,6 +291,33 @@ namespace RoundButton
             }
         }
 
+        private void DrawText(Graphics g)
+        {
+            if (!IsShowIcon)
+            {
+                if (!string.IsNullOrEmpty(this.Text))
+                {
+
+                    using (Brush brush = new SolidBrush(this.ForeColor))
+                    {
+                        using (StringFormat strFormat = new StringFormat()
+                        {
+                            Alignment = StringAlignment.Center,
+                            LineAlignment = StringAlignment.Center,
+
+                        })//文本格式
+                        {
+                            SizeF size = g.MeasureString(this.Text,this.Font);
+                            RectangleF tempRect = this.rect;
+                            tempRect.Height += size.Height/4;
+                            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+                            g.DrawString(this.Text, this.Font, brush, tempRect, strFormat);
+                        }
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// 绘制高亮效果
         /// </summary>
@@ -293,7 +325,7 @@ namespace RoundButton
         protected virtual void DrawHighLight(Graphics g)
         {
             RectangleF highLightRect = rect;
-            highLightRect.Inflate(-BorderWidth/2,-BorderWidth/2);
+            highLightRect.Inflate(-BorderWidth / 2, -BorderWidth / 2);
             Brush brush = Brushes.DodgerBlue;
             if (buttonOnPressed)
             {
@@ -309,7 +341,7 @@ namespace RoundButton
         #endregion
 
         #region 鼠标事件
-        
+
         /// <summary>
         /// 鼠标点击事件
         /// </summary>
@@ -355,7 +387,7 @@ namespace RoundButton
         #endregion
     }
 
-  public  partial class RoundButton
+    public partial class RoundButton
     {
         /// <summary>
         /// 必需的设计器变量。
