@@ -42,7 +42,7 @@ namespace DataBindingTest
 
         public string Name { get; set; }
 
-        public string Age { get; set; }
+        public double Age { get; set; }
 
         public SexConstant Sex { get; set; }
 

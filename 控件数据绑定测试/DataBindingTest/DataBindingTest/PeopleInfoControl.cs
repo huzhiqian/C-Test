@@ -21,9 +21,9 @@ namespace DataBindingTest
         {
             set {
                 this.tbx_Name.DataBindings.Add("Text",value,"Name");
-                this.tbx_Age.DataBindings.Add("Text",value,"Age");
+                this.tbx_Age.DataBindings.Add("Text", value, "Age",true, DataSourceUpdateMode.OnValidation,null, "0岁");
                 this.cmb_Sex.DataBindings.Add("Text",value,"Sex");
-                this.tbx_Address.DataBindings.Add("Text",value,"Address");
+                this.tbx_Address.DataBindings.Add("Text", value, "Address");
             }
         }
 

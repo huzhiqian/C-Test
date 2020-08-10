@@ -32,9 +32,9 @@
             this.titleBar = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEXMin = new FormEx.FCButton();
             this.btnEXClose = new FormEx.FCButton();
             this.btnEXMax = new FormEx.FCButton();
+            this.btnEXMin = new FormEx.FCButton();
             this.titleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,26 +74,9 @@
             this.label1.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(55, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 14);
+            this.label1.Size = new System.Drawing.Size(0, 14);
             this.label1.TabIndex = 3;
             this.label1.Text = this.Text;
-            // 
-            // btnEXMin
-            // 
-            this.btnEXMin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEXMin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEXMin.BackgroundImage")));
-            this.btnEXMin.ButtonType = FormEx.ButtonType.Minimize;
-            this.btnEXMin.DefaultImage = ((System.Drawing.Image)(resources.GetObject("btnEXMin.DefaultImage")));
-            this.btnEXMin.Location = new System.Drawing.Point(704, 13);
-            this.btnEXMin.MouseDownColor = System.Drawing.Color.Khaki;
-            this.btnEXMin.MouseEnterColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnEXMin.MouseLeaveColor = System.Drawing.Color.Transparent;
-            this.btnEXMin.MouseUpColor = System.Drawing.Color.Transparent;
-            this.btnEXMin.Name = "btnEXMin";
-            this.btnEXMin.Size = new System.Drawing.Size(16, 15);
-            this.btnEXMin.TabIndex = 0;
-            this.btnEXMin.Click += new System.EventHandler(this.btnEXMin_Click);
             // 
             // btnEXClose
             // 
@@ -128,6 +111,23 @@
             this.btnEXMax.Size = new System.Drawing.Size(16, 15);
             this.btnEXMax.TabIndex = 1;
             this.btnEXMax.Click += new System.EventHandler(this.btnEXMax_Click);
+            // 
+            // btnEXMin
+            // 
+            this.btnEXMin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEXMin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEXMin.BackgroundImage")));
+            this.btnEXMin.ButtonType = FormEx.ButtonType.Minimize;
+            this.btnEXMin.DefaultImage = ((System.Drawing.Image)(resources.GetObject("btnEXMin.DefaultImage")));
+            this.btnEXMin.Location = new System.Drawing.Point(704, 13);
+            this.btnEXMin.MouseDownColor = System.Drawing.Color.Khaki;
+            this.btnEXMin.MouseEnterColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnEXMin.MouseLeaveColor = System.Drawing.Color.Transparent;
+            this.btnEXMin.MouseUpColor = System.Drawing.Color.Transparent;
+            this.btnEXMin.Name = "btnEXMin";
+            this.btnEXMin.Size = new System.Drawing.Size(16, 15);
+            this.btnEXMin.TabIndex = 0;
+            this.btnEXMin.Click += new System.EventHandler(this.btnEXMin_Click);
             // 
             // NBFormEx
             // 

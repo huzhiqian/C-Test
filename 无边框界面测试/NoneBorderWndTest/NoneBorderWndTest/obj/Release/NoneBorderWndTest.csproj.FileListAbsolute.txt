@@ -37,3 +37,16 @@ E:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\
 E:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.csproj.CopyComplete
 E:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.exe
 E:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.pdb
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\bin\Release\NoneBorderWndTest.exe.config
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\bin\Release\NoneBorderWndTest.exe
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\bin\Release\NoneBorderWndTest.pdb
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\bin\Release\FormEx.dll
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\bin\Release\FormEx.pdb
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.csprojAssemblyReference.cache
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.Form1.resources
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.Properties.Resources.resources
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.csproj.GenerateResource.cache
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.csproj.CoreCompileInputs.cache
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.csproj.CopyComplete
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.exe
+H:\C#练习程序\无边框界面测试\NoneBorderWndTest\NoneBorderWndTest\obj\Release\NoneBorderWndTest.pdb

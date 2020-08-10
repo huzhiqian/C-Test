@@ -9,7 +9,7 @@ namespace DataBindingTest
     {
         string Name { get; set; }
 
-        string Age { get; set; }
+        double Age { get; set; }
 
         SexConstant Sex { get; set; }
 

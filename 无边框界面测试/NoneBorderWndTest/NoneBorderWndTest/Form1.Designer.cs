@@ -120,7 +120,9 @@
             this.Controls.Add(this.fcButton3);
             this.Controls.Add(this.fcButton2);
             this.Controls.Add(this.fcButton1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(0, 0);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Controls.SetChildIndex(this.fcButton1, 0);

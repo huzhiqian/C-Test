@@ -15,13 +15,14 @@ namespace FormEx
     {
         private Color titleBarColor = Color.Turquoise;
         private Point mPoint;
-        public NBFormEx()
+        public NBFormEx():base()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.MinimumSize = new System.Drawing.Size(titleBar.Width / 4, titleBar.Height * 2);
             SetClassLong(this.Handle, GCL_STYLE, GetClassLong(this.Handle, GCL_STYLE) | CS_DropSHADOW);//添加阴影效果
             label1.Text = this.Text;
+           
         }
 
         private  void NBFormEx_Load(object sender, EventArgs e)
@@ -124,8 +125,15 @@ namespace FormEx
                 }
             }
         }
-
-
+        [Browsable(true)]
+        public new Icon Icon
+        {
+            get { return base.Icon; }
+            set {
+                base.Icon = value;
+                this.pictureBox1.Image = value.ToBitmap();
+            }
+        }
         #endregion
 
         const int WM_NCHITTEST = 0x0084;

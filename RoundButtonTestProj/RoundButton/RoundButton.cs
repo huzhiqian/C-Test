@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace RoundButton
 {
+    
+    [ToolboxItem(true)]
     public partial class RoundButton : Button
     {
 
@@ -145,7 +147,7 @@ namespace RoundButton
 
         protected override void OnPaint(PaintEventArgs pevent)
         {
-            //base.OnPaint(pevent);
+            base.OnPaint(pevent);
             base.OnPaintBackground(pevent);
 
             Graphics g = pevent.Graphics;
@@ -353,7 +355,7 @@ namespace RoundButton
         #endregion
     }
 
-    partial class RoundButton
+  public  partial class RoundButton
     {
         /// <summary>
         /// 必需的设计器变量。

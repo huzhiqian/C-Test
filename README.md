@@ -58,6 +58,10 @@
 
 `28 2020-7-23 添加ListView测试，主要测试ListView能不能作为新的显示日志信息的控件用，测试结果是ListView可以满足新的日志显示控件的需求。位置：Root%\ListViewTest`
 
+`29 2020-8-10 添加DataGridView单元格类型（ColumnType）测试，.net为我们提供了一些单元格类型，如DataGridViewTextBox等，这里主要测试用户能不能自定义扩展类型，结论:理论上用户可以任意扩展类型，也能将任意自定义控件放入到DataGridView的单元格中去。位置：Root%\DataGridView单元格类型扩展`	  
+
+
+
 
 
 
