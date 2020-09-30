@@ -339,6 +339,7 @@ namespace WindowsFormsApp1
 
             string tempValue = formattedValue as string;
             if (!string.IsNullOrEmpty(tempValue as string) && formattedValue != null) {
+                Console.WriteLine($"ParseFormattedValue: {tempValue}.");
                 return Convert.ToInt32(tempValue);
             }
             return this.defaultValue;
@@ -421,6 +422,7 @@ namespace WindowsFormsApp1
             object formattedValue= base.GetFormattedValue(value, rowIndex, ref cellStyle, valueTypeConverter, formattedValueTypeConverter, context);
            // int formattedNumber = Convert.ToInt32( formattedValue);
             if (!string.IsNullOrEmpty(formattedValue as string) && value != null) {
+                Console.WriteLine($"GetFormattedValue: RowIndex{rowIndex},Value:{formattedValue}");
                 return Convert.ToInt32(formattedValue);
             }
             return this.defaultValue;

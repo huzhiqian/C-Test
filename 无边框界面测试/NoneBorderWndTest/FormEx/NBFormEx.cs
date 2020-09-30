@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace FormEx
 {
     public partial class NBFormEx : Form
@@ -17,12 +18,13 @@ namespace FormEx
         private Point mPoint;
         public NBFormEx():base()
         {
-            InitializeComponent();
+           
             this.StartPosition = FormStartPosition.CenterScreen;
+           
+            InitializeComponent();
             this.MinimumSize = new System.Drawing.Size(titleBar.Width / 4, titleBar.Height * 2);
             SetClassLong(this.Handle, GCL_STYLE, GetClassLong(this.Handle, GCL_STYLE) | CS_DropSHADOW);//添加阴影效果
             label1.Text = this.Text;
-           
         }
 
         private  void NBFormEx_Load(object sender, EventArgs e)
@@ -325,7 +327,27 @@ namespace FormEx
         public void SetWindowRegion()
         {
             GraphicsPath FormPath;
-            Rectangle rect = new Rectangle(0, 0, this.Width, this.Height);
+            Rectangle rect = new Rectangle(0, 0, this.Width, this.Height); 
+            //switch (this.StartPosition)
+            //{
+            //    case FormStartPosition.Manual:
+            //        break;
+            //    case FormStartPosition.CenterScreen:
+            //       Rectangle screenRect= Screen.GetBounds(this);
+            //        int locationX = screenRect.Width / 2 - this.Width / 2;
+            //        int locationY = screenRect.Height / 2 - this.Height / 2;
+            //        rect= new Rectangle(locationX, locationY, this.Width, this.Height);
+            //        break;
+            //    case FormStartPosition.WindowsDefaultLocation:
+            //        break;
+            //    case FormStartPosition.WindowsDefaultBounds:
+            //        break;
+            //    case FormStartPosition.CenterParent:
+            //        break;
+            //    default:
+            //        break;
+            //}
+         
             FormPath = GetRoundedRectPath(rect, 10);
           
             this.Region = new Region(FormPath);

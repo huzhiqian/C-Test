@@ -119,7 +119,7 @@ namespace WindowsFormsApp1
 
         }
 
-        public bool EditingControlWantsInputKey(Keys keyData, bool dataGridViewWantsInputKey)
+        public virtual bool EditingControlWantsInputKey(Keys keyData, bool dataGridViewWantsInputKey)
         {
 
             switch (keyData & Keys.KeyCode)

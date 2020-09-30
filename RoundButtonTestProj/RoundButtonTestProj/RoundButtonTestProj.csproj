@@ -42,7 +42,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -82,8 +81,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RectButton\RectButton.csproj">
+      <Project>{68EEEB53-5C93-4347-8073-18D751C712C5}</Project>
+      <Name>RectButton</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RoundButton\RoundButton.csproj">
-      <Project>{7FF879E8-DEE9-4193-8400-47E3B4E14F12}</Project>
+      <Project>{7ff879e8-dee9-4193-8400-47e3b4e14f12}</Project>
       <Name>RoundButton</Name>
     </ProjectReference>
   </ItemGroup>

@@ -26,6 +26,7 @@ namespace WindowsFormsApp1
             bool state = checkBox1.Checked;
            int curIndex= this.dataGridView1.Rows.Add();
             this.dataGridView1.Rows[curIndex].Cells[0].Value = state ? imageList.Images[0] : imageList.Images[1];
+            this.dataGridView1.Rows[curIndex].Cells[2].Value = 100;
            
         }
 

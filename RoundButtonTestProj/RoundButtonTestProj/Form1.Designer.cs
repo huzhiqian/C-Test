@@ -32,6 +32,7 @@
             this.roundButton3 = new RoundButton.RoundButton();
             this.roundButton2 = new RoundButton.RoundButton();
             this.roundButton1 = new RoundButton.RoundButton();
+            this.rectButton1 = new RectButton.RectButton();
             this.SuspendLayout();
             // 
             // button1
@@ -51,7 +52,7 @@
             this.roundButton3.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.roundButton3.Location = new System.Drawing.Point(386, 124);
             this.roundButton3.Name = "roundButton3";
-            this.roundButton3.Size = new System.Drawing.Size(147, 147);
+            this.roundButton3.Size = new System.Drawing.Size(148, 148);
             this.roundButton3.TabIndex = 2;
             this.roundButton3.Text = "测试";
             this.roundButton3.UseVisualStyleBackColor = true;
@@ -87,11 +88,23 @@
             this.roundButton1.Text = "roundButton1";
             this.roundButton1.UseVisualStyleBackColor = true;
             // 
+            // rectButton1
+            // 
+            this.rectButton1.BorderWidth = 4;
+            this.rectButton1.DistanceToBorder = 4;
+            this.rectButton1.Location = new System.Drawing.Point(257, 256);
+            this.rectButton1.Name = "rectButton1";
+            this.rectButton1.Size = new System.Drawing.Size(110, 83);
+            this.rectButton1.TabIndex = 4;
+            this.rectButton1.Text = "rectButton1";
+            this.rectButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 360);
+            this.Controls.Add(this.rectButton1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.roundButton3);
             this.Controls.Add(this.roundButton2);
@@ -109,6 +122,7 @@
         private RoundButton.RoundButton roundButton2;
         private RoundButton.RoundButton roundButton3;
         private System.Windows.Forms.Button button1;
+        private RectButton.RectButton rectButton1;
     }
 }
 

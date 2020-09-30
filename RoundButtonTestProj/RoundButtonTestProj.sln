@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.779
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundButtonTestProj", "RoundButtonTestProj\RoundButtonTestProj.csproj", "{047020FA-8896-492A-B591-200EC7B7522C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundButton", "RoundButton\RoundButton.csproj", "{7FF879E8-DEE9-4193-8400-47E3B4E14F12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectButton", "RectButton\RectButton.csproj", "{68EEEB53-5C93-4347-8073-18D751C712C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7FF879E8-DEE9-4193-8400-47E3B4E14F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FF879E8-DEE9-4193-8400-47E3B4E14F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FF879E8-DEE9-4193-8400-47E3B4E14F12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EEEB53-5C93-4347-8073-18D751C712C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EEEB53-5C93-4347-8073-18D751C712C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EEEB53-5C93-4347-8073-18D751C712C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EEEB53-5C93-4347-8073-18D751C712C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

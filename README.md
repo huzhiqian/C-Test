@@ -60,7 +60,7 @@
 
 `29 2020-8-10 添加DataGridView单元格类型（ColumnType）测试，.net为我们提供了一些单元格类型，如DataGridViewTextBox等，这里主要测试用户能不能自定义扩展类型，结论:理论上用户可以任意扩展类型，也能将任意自定义控件放入到DataGridView的单元格中去。位置：Root%\DataGridView单元格类型扩展`	  
 
-
+`30 2020-9-30 添加GetAssemblyFromClassTest测试，该测试主要测试通过一个Dll文件中的一个类获取该Dll的反射对象，以及获取该Dll文件中的其他类信息等。位置：Root%\GetAssemblyFromClassTest`
 
 
 

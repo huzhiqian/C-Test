@@ -135,6 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 465);
             this.Controls.Add(this.titleBar);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NBFormEx";
             this.Text = "NBFormEx";
